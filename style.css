@@ -1,0 +1,413 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: none;
+    text-decoration: none;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 5px 10px black;
+    padding: 0 2%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    z-index: 1000;
+}
+/*imagen del encabezado*/
+.encabezado img{
+    width: 100px;
+    border-radius: 0%;
+    border: ridge black;
+}
+.encabezado nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+}
+/*iconos del encabezado (inicio,...)*/
+.encabezado nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    background-color:darkblue;
+}
+/* letras de los iconos del encabezado (inicio,...)*/
+a {
+    text-decoration: none;
+    font-size: 15px;
+    color: aqua;
+    padding: 10px 10px;
+    display: block;
+    font-family: Arial, Geneva, Tahoma, sans-serif ;
+    font-weight: 700;
+    }
+a:hover{
+    background: black;
+
+}
+/*primer menu desplegable*/
+.encabezado nav ul li ul{
+    
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    width: 250px;
+    background: navy;
+    display: none;
+}
+/*segundo menu desplegable*/
+.encabezado nav ul li ul li{
+    width: 100%;
+    position: relative;
+    border-bottom: solid 1px white;
+    border-top: solid 1px white;
+}
+.encabezado nav ul li ul li ul{
+    top: 0;
+    left: 250px;
+    position: absolute;
+    background: black;
+}
+.encabezado nav ul li:hover > ul{
+    display: block; 
+}
+/*parrafo de inicio*/
+p1 {
+    text-decoration: none;
+    font-size: 15px;
+    color: cyan;
+    padding: 10px 20px;
+    display: block;
+    font-family: Arial;
+    font-style: italic;
+    font-weight: 700;
+    width: 250px;
+}
+
+.calculadora h1{
+    color: red;
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-top: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+    font-weight: 700;
+}
+/*calculadora grafica programable...*/
+.calculadora p{
+    color: black;
+    font-family: Verdana;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    margin-top: 12%;
+    position: relative;
+}
+/*imagen de fondode la pagina*/
+body {
+    background-color: white;
+    background-image: url("img/primeA3.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: scroll;
+    background-position: 5% 5%;
+}
+/*calculadora empaquetada*/
+.calculadora3 img{
+    width: 35%;
+    margin-bottom: 5px;
+    margin-left: 20%;
+    margin-top: 40%;
+    position: relative;
+}
+/*especificaciones tecnicas*/
+.contenido1 h2{
+    color: rgb(41, 5, 248);
+    font-size: 31px;
+    font-family: 'Franklin Gothic Medium';
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-top: 5%;
+    position: relative;
+}
+/*descuento...*/
+.contenido1 h3{
+    color: black;
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-family: Tahoma;
+    font-weight: 700;
+}
+/*formato de la tabla*/
+table {
+    border-collapse: collapse;
+    margin-left: 2%;
+    margin-bottom: 10%;
+    cursor: pointer;
+}
+/*titulo de tabla*/
+table thead{
+    background-color: navy;
+    color: white;
+    border: 1px solid black;
+    font-family: Verdana;
+    font-weight: 700;
+    font-size: 20px;
+}
+/*contenido de la tabla*/
+table tbody{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    font-family: Verdana;
+    font-weight: 700;
+    font-size: 15px;
+}
+/*celdas de la tabla*/
+td {
+    padding: 10px;
+}
+/*encabezado de la tabla*/
+th {
+    padding: 10px;
+}
+/*mouse responsive en la tabla*/
+tr:hover{
+    background-color: navy;
+    color: white;
+    border: 1px solid black;
+}
+
+/*mascota TECN*/
+.mascota img{
+    width: 105px;
+    position: fixed;
+    left: 91%;
+    top: 71%;
+}
+/*datos del autor*/
+.autor {
+    color: black;
+    font-family: Verdana;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 20px;
+    top: 10%;
+    bottom: 10%;
+    left: 20px;
+    position: relative;
+}
+
+
+   /*__________________________________________________*/
+@media (max-width: 900px){
+    header {
+        padding: 10px;
+    }
+    header label {
+        display: initial;
+    }
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color:white;
+        box-shadow: 0 5px 10px black;
+        padding: 0 2%;
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+        z-index: 1000;
+    }
+    /*imagen del encabezado*/
+    .encabezado img{
+        width: 70px;
+        border-radius: 0%;
+        border: ridge black;
+        }
+    .encabezado nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 2px;
+    }
+    /*iconos del encabezado (inicio,...)*/
+    .encabezado nav ul{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        background-color:darkblue;
+    }
+    /* letras de los iconos del encabezado (inicio,...)*/
+    a {
+        text-decoration: none;
+        font-size: 12px;
+        color: aqua;
+        padding: 5px 10px;
+        display: block;
+        font-family: Arial, Geneva, Tahoma, sans-serif ;
+        font-weight: 700;
+        }
+    a:hover{
+        background: black;
+    
+    }
+    /*primer menu desplegable*/
+    .encabezado nav ul li ul{
+        position: absolute;
+        display: none;
+        flex-direction: column;
+        width: 140px;
+        background: navy;
+        display: none;
+    }
+    /*segundo menu desplegable*/
+    .encabezado nav ul li ul li{
+        width: 100%;
+        position: relative;
+        border-bottom: solid 1px white;
+        border-top: solid 1px white;
+    }
+    .encabezado nav ul li ul li ul{
+        top: 0;
+        left: 140px;
+        position: absolute;
+        background: black;
+    }
+    .encabezado nav ul li:hover > ul{
+        display: block; 
+    }
+    /*parrafo de inicio*/
+    p1 {
+        text-decoration: none;
+        font-size: 12px;
+        color: cyan;
+        padding: 10px 20px;
+        display: block;
+        font-family: Arial;
+        font-style: italic;
+        font-weight: 700;
+        width: 140px;
+    }
+     /*calculadora grafica programable...*/
+    .calculadora p{
+                color: black;
+        font-family: Verdana;
+        font-style: italic;
+        font-weight: 700;
+        font-size: 15px;
+        margin-bottom: 5px;
+        margin-left: 20px;
+        margin-top: 20%;
+        position: relative;
+    }
+
+    /*imagen de fondode la pagina*/
+    body {
+        background-color: white;
+        background-image: url("primeA3.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-attachment: scroll;
+        background-position: 5% 10%;
+                
+    }
+    /*calculadora empaquetada*/
+    .calculadora3 img{
+        width: 50%;
+        margin-bottom: 5px;
+        margin-left: 20%;
+        margin-top: 40%;
+        position: relative;
+}
+    /*especificaciones tecnicas*/
+    .contenido1 h2{
+        color: rgb(41, 5, 248);
+        font-size: 24px;
+        font-family: 'Franklin Gothic Medium';
+        font-weight: 700;
+        margin-bottom: 10px;
+        margin-left: 20px;
+        margin-top: 7%;
+        position: relative;
+    }
+
+    /*descuento...*/
+    .contenido1 h3{
+        color: black;
+        font-size: 15px;
+        font-family: Tahoma;
+        font-weight: 700;
+        margin-bottom: 10px;
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+          
+    /*formato de la tabla*/
+    table {
+        border-collapse: collapse;
+        margin-left: 2%;
+        margin-bottom: 10%;
+        cursor: pointer;
+    }
+    /*titulo de tabla*/
+    table thead{
+        background-color: navy;
+        color: white;
+        border: 1px solid black;
+        font-family: Verdana;
+        font-weight: 700;
+        font-size: 15px;
+    }
+    /*contenido de la tabla*/
+    table tbody{
+        background-color: white;
+        color: black;
+        border: 1px solid black;
+        font-family: Verdana;
+        font-weight: 700;
+        font-size: 12px;
+    }
+    /*celdas de la tabla*/
+    td {
+        padding: 7px;
+    }
+    /*encabezado de la tabla*/
+    th {
+        padding: 10px;
+    }
+    /*mouse responsive en la tabla*/
+    tr:hover{
+        background-color: navy;
+        color: white;
+        border: 1px solid black;
+    }
+
+
+    /*mascota TECN*/
+    .mascota img{
+        display: none;
+    }
+    /*datos del autor*/
+    .autor {
+        display: none;
+    }
+    #menu:checked ~ .nav {
+        display: initial;
+    }
+
+
+}
